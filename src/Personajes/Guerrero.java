@@ -9,14 +9,19 @@ import Equipamento.Arma;
 import Equipamento.Armadura;
 import Equipamento.Espada;
 import Equipamento.MallaDeCota;
-import Equipamento.Vestuario;
 
 /**
  *
  * @author estudiantes
  */
 public class Guerrero extends Personaje {
-    @Override
+   
+	public Guerrero(String nombre, String estatura){
+		super(nombre,estatura);
+	}
+	
+	
+	@Override
     public Arma crearArma() {
         return new Espada();
     }
@@ -25,9 +30,8 @@ public class Guerrero extends Personaje {
     public Armadura crearArmadura() {
        return new MallaDeCota();
     }
+    
+    
 
-    @Override
-    public Vestuario crearVestuario() {
-       
-    }
+ 
 }
