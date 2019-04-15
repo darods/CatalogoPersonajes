@@ -31,7 +31,7 @@ public class ElfoOsucro extends Personaje{
     public Armadura crearArmadura() {
         return new EscamasDragon();
     }
-
+    
     @Override
     public Montura crearMontura() {
         return new LoboInfernal();

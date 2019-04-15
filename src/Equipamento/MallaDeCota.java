@@ -12,7 +12,8 @@ package Equipamento;
 public class MallaDeCota implements Armadura{
 	
 	@Override
-    public void generarArmadura(){
+    public String generarArmadura(){
+		return "";
 		
 	}
 	
