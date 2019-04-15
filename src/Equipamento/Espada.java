@@ -9,10 +9,10 @@ package Equipamento;
  *
  * @author estudiantes
  */
-public class Espada implements Arma{
+public class Espada implements Arma {
 	
 	@Override
-	public void generarArma(){
-        //poner imagen y texto con caracteristicas
+	public String generarArma(){
+        return "";
     }
 }

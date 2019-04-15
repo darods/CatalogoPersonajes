@@ -10,6 +10,6 @@ package Equipamento;
  * @author estudiantes
  */
 public interface Arma{
-    public void generarArma();
+    public String generarArma();
     
 }

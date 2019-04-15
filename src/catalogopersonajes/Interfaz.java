@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 public class Interfaz extends JFrame{
 	
 	JLabel nombre ;
+	
 	public Interfaz(){
 		
 		
