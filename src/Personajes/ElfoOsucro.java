@@ -9,6 +9,8 @@ import Equipamento.Arco;
 import Equipamento.Arma;
 import Equipamento.Armadura;
 import Equipamento.EscamasDragon;
+import Equipamento.LoboInfernal;
+import Equipamento.Montura;
 
 /**
  *
@@ -28,6 +30,11 @@ public class ElfoOsucro extends Personaje{
     @Override
     public Armadura crearArmadura() {
         return new EscamasDragon();
+    }
+
+    @Override
+    public Montura crearMontura() {
+        return new LoboInfernal();
     }
     
 }

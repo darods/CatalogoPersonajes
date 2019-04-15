@@ -12,8 +12,8 @@ package Equipamento;
 public class Arco implements Arma{
 
     @Override
-    public void generarArma() {
-        //poner imagen y texto
+    public String generarArma() {
+        return "Se ha generado el arco tangente";
     }
     
 }
