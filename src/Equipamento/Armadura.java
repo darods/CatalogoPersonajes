@@ -10,5 +10,5 @@ package Equipamento;
  * @author estudiantes
  */
 public interface Armadura {
-	 public void generarArmadura();
+	 public String generarArmadura();
 }

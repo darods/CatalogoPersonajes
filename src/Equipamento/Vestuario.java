@@ -7,13 +7,8 @@ package Equipamento;
 
 /**
  *
- * @author nasa
+ * @author estudiantes
  */
-public class Arco implements Arma{
-
-    @Override
-    public String generarArma() {
-    	return "" ;   
-}
+public interface Vestuario{
     
 }

@@ -12,8 +12,8 @@ package Equipamento;
 public class EscamasDragon implements Armadura {
 
     @Override
-    public void generarArmadura() {
-        throw new UnsupportedOperationException("poner las escamas de dragon."); //To change body of generated methods, choose Tools | Templates.
+    public String generarArmadura() {
+        return ""; 
     }
     
 }
