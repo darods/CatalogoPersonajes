@@ -2,6 +2,7 @@ package catalogopersonajes;
 
 import Equipamento.Arma;
 import Equipamento.Armadura;
+import Equipamento.Montura;
 import Personajes.Guerrero;
 import Personajes.Personaje;
 
@@ -10,6 +11,7 @@ public class CatalogoPersonaje {
 	Personaje personaje;
 	Arma arma;
 	Armadura armadura;
+	Montura montura;
 	int opcion;
 	
 	
@@ -23,6 +25,7 @@ public class CatalogoPersonaje {
 				personaje = new Guerrero("SCAR DOMADOR DE DRAGONES","1.90");
 				arma= personaje.crearArma();
 				armadura= personaje.crearArmadura();
+				montura = personaje.crearMontura();
 				break;
 				
 			case 1 :

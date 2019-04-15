@@ -16,6 +16,7 @@ public abstract  class Personaje {
     private String estatura;
     public abstract Arma crearArma();
     public abstract Armadura crearArmadura();
+    public abstract Montura crearMontura();
     
     public Personaje(String nombre , String estatura) {
     	this.nombre = nombre;

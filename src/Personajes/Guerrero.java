@@ -7,8 +7,10 @@ package Personajes;
 
 import Equipamento.Arma;
 import Equipamento.Armadura;
+import Equipamento.Caballo;
 import Equipamento.Espada;
 import Equipamento.MallaDeCota;
+import Equipamento.Montura;
 
 /**
  *
@@ -31,6 +33,10 @@ public class Guerrero extends Personaje {
        return new MallaDeCota();
     }
     
+    @Override
+    public Montura crearMontura() {
+       return new Caballo();
+    }
     
 
  
