@@ -10,7 +10,10 @@ package Equipamento;
  * @author estudiantes
  */
 public class MallaDeCota implements Armadura{
+	
+	@Override
     public void generarArmadura(){
-        
-    }
+		
+	}
+	
 }

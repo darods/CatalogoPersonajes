@@ -13,8 +13,25 @@ import Equipamento.*;
  */
 public abstract  class Personaje {
     private String nombre;
-    private int estatura;
+    private String estatura;
     public abstract Arma crearArma();
     public abstract Armadura crearArmadura();
-    public abstract Vestuario crearVestuario();
+    
+    public Personaje(String nombre , String estatura) {
+    	this.nombre = nombre;
+    	this.estatura = estatura;
+    }
+	
+    public String getNombre() {
+		return nombre;
+	}
+
+
+	public String getEstatura() {
+		return estatura;
+	}
+
+
+    
+    
 }
