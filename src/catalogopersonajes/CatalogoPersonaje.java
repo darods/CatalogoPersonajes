@@ -22,7 +22,7 @@ public class CatalogoPersonaje {
 		switch (opcion) {
 			case 0 :
 				
-				personaje = new Guerrero("SCAR DOMADOR DE DRAGONES","1.90");
+				personaje = new Guerrero("SCAR DOMADOR DE DRAGONES","1.95");
 				arma= personaje.crearArma();
 				armadura= personaje.crearArmadura();
 				montura = personaje.crearMontura();

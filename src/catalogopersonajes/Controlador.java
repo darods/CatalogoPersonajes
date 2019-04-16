@@ -5,6 +5,7 @@
  */
 package catalogopersonajes;
 
+import Interfaz.Interfaz;
 import Personajes.Personaje;
 
 /**
