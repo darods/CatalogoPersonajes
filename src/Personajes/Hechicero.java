@@ -12,13 +12,19 @@ import Equipamento.*;
  *
  * @author oscar
  */
-public class Hechicero {
-    public Arma crearArma(){
+public class Hechicero extends Personaje{
+	public Hechicero(String nombre, String estatura) {
+		super(nombre, estatura);
+	}
+	@Override
+	public Arma crearArma(){
         return new Barita();
     }
+	@Override
     public Armadura crearArmadura(){
         return new MantoMagico();
     }
+	@Override
     public Montura crearMontura(){
         return new NubeMagica();
     }
