@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a23e29-40ce-40a0-9593-8d66aa9da63f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Arco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Arco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Barita.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Barita.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Imagenes/fondoFinal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Imagenes/guerrero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Imagenes/titulo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/PanelFondo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/PanelFondo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Barita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Barita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/fondoFinal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/guerrero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/titulo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaz/PanelFondo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaz/PanelFondo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="-435">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Controlador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,15 +60,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interfaz/PanelFondo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -83,8 +74,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Equipamento/Arco.java" />
         <option value="$PROJECT_DIR$/src/Equipamento/Barita.java" />
-        <option value="$PROJECT_DIR$/src/Interfaz/Interfaz.java" />
         <option value="$PROJECT_DIR$/src/Interfaz/PanelFondo.java" />
+        <option value="$PROJECT_DIR$/src/Interfaz/Interfaz.java" />
+        <option value="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" />
       </list>
     </option>
   </component>
@@ -120,12 +112,6 @@
               <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="catalogopersonajes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Equipamento" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +179,7 @@
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -202,7 +188,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,17 +231,24 @@
     <entry file="file://$PROJECT_DIR$/src/Imagenes/titulo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.desktop/javax/swing/ImageIcon.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaz/PanelFondo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -266,10 +259,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaz/PanelFondo.java">
+    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Controlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="255">
+          <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
