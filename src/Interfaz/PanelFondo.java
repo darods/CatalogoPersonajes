@@ -20,7 +20,7 @@ public class PanelFondo extends Container{
 
     public PanelFondo(){
      
-     icono = new ImageIcon(getClass().getResource("/imagenes/fondoFinal.jpg"));
+     icono = new ImageIcon(getClass().getResource("/Imagenes/fondoFinal.jpg"));
      
   
 
