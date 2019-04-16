@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="325" />
+    <option name="width" value="1340" />
+    <option name="height" value="728" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Controlador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="catalogopersonajes.Controlador" />
+      <module name="CatalogoPersonajes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="catalogopersonajes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Controlador" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
