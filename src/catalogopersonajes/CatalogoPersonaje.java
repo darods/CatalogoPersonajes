@@ -42,7 +42,7 @@ public class CatalogoPersonaje {
 				
 				break;
 			case 2 : 
-				personaje = new Hechicero("Merlin","1.50");
+				personaje = new Hechicero("Merlin principe de las tinieblas","1.50");
 				arma= personaje.crearArma();
 				armadura= personaje.crearArmadura();
 				montura = personaje.crearMontura();

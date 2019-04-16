@@ -8,10 +8,10 @@ package Equipamento;
 
 /**
  *
- * @author oscar
+ * @author 
  */
 public class Barita implements Arma{
     public String generarArma(){
-        return "Barita creada";
+        return "poner ruta de la barita";
     }
 }
