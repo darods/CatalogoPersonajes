@@ -43,7 +43,7 @@ public class Interfaz extends JFrame implements ActionListener{
 	private ImageIcon img_elfo;
 
 
-	private int opcion=0;
+	//private int opcion=0;
 
 	private CatalogoPersonaje user;
 
@@ -201,6 +201,7 @@ public class Interfaz extends JFrame implements ActionListener{
 
 			lbl_nombre.setText(user.personaje.getNombre());
 			lbl_estatura.setText("Estatura :"+user.personaje.getEstatura());
+
 
 
 
