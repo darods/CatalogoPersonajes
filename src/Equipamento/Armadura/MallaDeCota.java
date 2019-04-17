@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Personajes;
-
+package Equipamento.Armadura;
 
 /**
  *
  * @author estudiantes
  */
-public class Guerrero extends Personaje {
-   
-	public Guerrero(String nombre, String estatura){
-		super(nombre,estatura);
+public class MallaDeCota implements Armadura{
+	
+	@Override
+    public String generarArmadura(){
+		return "Malla de cota";
+		
 	}
-
-
+	
 }

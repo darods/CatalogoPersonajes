@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 
-package Personajes;
+package Equipamento.Armadura;
 
-/**
- *
- * @author oscar
- */
-public class Hechicero extends Personaje{
-	public Hechicero(String nombre, String estatura) {
-		super(nombre, estatura);
-	}
 
+public class MantoMagico implements Armadura{
+	@Override
+	public String generarArmadura(){
+        return "manto magico";
+    }
 }

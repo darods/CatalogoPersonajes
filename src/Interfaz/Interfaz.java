@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import catalogopersonajes.CatalogoPersonaje;
+import Factorias.*;
 
 
 
@@ -27,10 +27,13 @@ public class Interfaz extends JFrame implements ActionListener{
 	private JButton btn_guerrero;
 	private JButton btn_hechicero;
 	private JButton btn_elfo;
-	private ImageIcon img_titulo;
+	private ImageIcon img_titulo = new ImageIcon("./img/titulo.png");
 	private JLabel lbl_titulo;
 	private JLabel lbl_nombre;
 	private JLabel lbl_estatura;
+	private JLabel lbl_armadura;
+	private JLabel lbl_arma;
+	private JLabel lbl_montura;
 	private JPanel panelPersonajeH;
 	private JPanel panelPersonajeG;
 	private JPanel panelPersonajeE;
@@ -38,14 +41,11 @@ public class Interfaz extends JFrame implements ActionListener{
 	private JPanel panelDatos;
 
 	private JLabel personaje;
-	private ImageIcon img_hechicero;
-	private ImageIcon img_guerrero;
-	private ImageIcon img_elfo;
+	private ImageIcon img_hechicero = new ImageIcon("./img/PerHechicero.png");
+	private ImageIcon img_guerrero = new ImageIcon("./img/PerGuerrero.png");
+	private ImageIcon img_elfo = new ImageIcon("./img/PerElfo.png");
 
-
-	//private int opcion=0;
-
-	private CatalogoPersonaje user;
+	private String[] datos;
 
 
 
@@ -61,10 +61,21 @@ public class Interfaz extends JFrame implements ActionListener{
  //COMPONENTES --------------------------------------
 		lbl_nombre= new JLabel();
 		lbl_estatura= new JLabel();
+		lbl_armadura = new JLabel();
+		lbl_arma = new JLabel();
+		lbl_montura = new JLabel();
+
 		lbl_nombre.setForeground(Color.WHITE);
 		lbl_nombre.setFont(new Font("Viner Hand ITC", Font.BOLD, 15));
 		lbl_estatura.setForeground(Color.WHITE);
 		lbl_estatura.setFont(new Font("Viner Hand ITC", Font.BOLD, 15));
+		lbl_armadura.setForeground(Color.WHITE);
+		lbl_armadura.setFont(new Font("Viner Hand ITC", Font.BOLD, 15));
+		lbl_arma.setForeground(Color.WHITE);
+		lbl_arma.setFont(new Font("Viner Hand ITC", Font.BOLD, 15));
+		lbl_montura.setForeground(Color.WHITE);
+		lbl_montura.setFont(new Font("Viner Hand ITC", Font.BOLD, 15));
+
 
 		panelPersonajeH=new JPanel();
 		panelPersonajeH.setSize(800,345);
@@ -92,11 +103,11 @@ public class Interfaz extends JFrame implements ActionListener{
 		panelDatos.setOpaque(false);
 		panelDatos.add(lbl_nombre);
 		panelDatos.add(lbl_estatura);
+		panelDatos.add(lbl_armadura);
+		panelDatos.add(lbl_arma);
+		panelDatos.add(lbl_montura);
 
 
-
-
-		img_titulo = new ImageIcon("./img/titulo.png");
    		lbl_titulo= new JLabel(img_titulo);
    		lbl_titulo.setSize(900,200);
    		lbl_titulo.setLocation(1, 1);
@@ -140,10 +151,7 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_elfo.setHorizontalAlignment(SwingConstants.CENTER);
     	btn_elfo.addActionListener(this);
 
-    	img_hechicero = new ImageIcon("./img/PerHechicero.png");
-    	img_guerrero=new ImageIcon("./img/PerGuerrero.png");
-    	img_elfo=new ImageIcon("./img/PerElfo.png");
-			personaje= new JLabel();
+    	personaje= new JLabel();
 
 
 
@@ -152,9 +160,9 @@ public class Interfaz extends JFrame implements ActionListener{
 
     	//VENTANA PRINCIPAL-----------------------------------
 
-			this.setSize(900, 700);
-			this.setLocationRelativeTo(null);
-			this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setSize(900, 700);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     	this.setTitle("Catalogo De Personajes");
     	this.setResizable(false);
     	this.setContentPane(Fondo);
@@ -166,7 +174,6 @@ public class Interfaz extends JFrame implements ActionListener{
 
 		//DISTRIBUCION -------------------------------
 
-//    	this.getContentPane().setLayout(new BorderLayout());
     	this.getContentPane().add(btn_guerrero);
     	this.getContentPane().add(btn_hechicero);
     	this.getContentPane().add(btn_elfo);
@@ -183,88 +190,57 @@ public class Interfaz extends JFrame implements ActionListener{
 
 	}
 
-	public void apagar () {
+	private void apagar () {
 		panelPersonajeE.setVisible(false);
 		panelPersonajeG.setVisible(false);
 		panelPersonajeH.setVisible(false);
 	}
 
 
+	private void generarVistaPersonaje(AbstractFactory factory, ImageIcon Icono, JPanel panel){
+		apagar();
+		Client cliente = new Client(factory);
+		datos = cliente.run();
 
+		lbl_nombre.setText(datos[0]);
+		lbl_estatura.setText("Estatura : "+ datos[1] + " metros");
+		lbl_armadura.setText("Armadura : "+ datos[2]);
+		lbl_arma.setText("Arma : " + datos[3]);
+		lbl_montura.setText("Montura : " + datos[4]);
+
+		personaje.setIcon(Icono);
+
+		panel.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
+		panel.add(personaje,BorderLayout.CENTER);
+		panel.add(panelDatos,BorderLayout.EAST);
+
+
+		panel.setVisible(true);
+
+		this.getContentPane().add(panel);
+
+
+	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource() == btn_hechicero) {
-			apagar ();
-			user=new CatalogoPersonaje(2);
-
-
-			lbl_nombre.setText(user.personaje.getNombre());
-			lbl_estatura.setText("Estatura :"+user.personaje.getEstatura());
-
-
-
-
-			personaje.setIcon(img_hechicero);
-
-
-			panelPersonajeH.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
-			panelPersonajeH.add(personaje,BorderLayout.CENTER);
-			panelPersonajeH.add(panelDatos,BorderLayout.EAST);
-
-
-			panelPersonajeH.setVisible(true);
-			this.getContentPane().add(panelPersonajeH);
-
+			AbstractFactory factory = new FactoriaMagica();
+			generarVistaPersonaje(factory,img_hechicero,panelPersonajeH);
 
 		}
 
 
 		if (e.getSource() == btn_guerrero) {
-			apagar();
-
-			user=new CatalogoPersonaje(0);
-
-
-			lbl_nombre.setText(user.personaje.getNombre());
-			lbl_estatura.setText("Estatura :"+user.personaje.getEstatura());
-
-			personaje.setIcon(img_guerrero);
-
-
-
-			panelPersonajeG.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
-			panelPersonajeG.add(personaje,BorderLayout.CENTER);
-			panelPersonajeG.add(panelDatos,BorderLayout.EAST);
-
-
-			panelPersonajeG.setVisible(true);
-
-			this.getContentPane().add(panelPersonajeG);
-
+			AbstractFactory factory = new FactoriaMelee();
+			generarVistaPersonaje(factory, img_guerrero, panelPersonajeG);
 
 		}
 
 		if (e.getSource() == btn_elfo){
-			apagar();
 
-			user = new CatalogoPersonaje(1);
-
-			lbl_nombre.setText(user.personaje.getNombre());
-			lbl_estatura.setText("Estatura :"+user.personaje.getEstatura());
-
-			personaje.setIcon(img_elfo);
-
-
-
-			panelPersonajeG.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
-			panelPersonajeG.add(personaje,BorderLayout.CENTER);
-			panelPersonajeG.add(panelDatos,BorderLayout.EAST);
-
-
-			panelPersonajeG.setVisible(true);
-
-			this.getContentPane().add(panelPersonajeG);
+			AbstractFactory factory = new FactoriaDistancia();
+			generarVistaPersonaje(factory, img_elfo, panelPersonajeE);
 
 		}
 	}

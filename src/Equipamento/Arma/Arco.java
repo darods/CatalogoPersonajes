@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package Personajes;
+package Equipamento.Arma;
 
 /**
  *
- * @author oscar
+ * @author nasa
  */
-public class Hechicero extends Personaje{
-	public Hechicero(String nombre, String estatura) {
-		super(nombre, estatura);
-	}
+public class Arco implements Arma{
 
+    @Override
+    public String generarArma() {
+    	return "El arco tangente" ;
+}
+    
 }

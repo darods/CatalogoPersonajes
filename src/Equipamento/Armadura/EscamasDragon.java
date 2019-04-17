@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package Personajes;
+package Equipamento.Armadura;
 
 /**
  *
- * @author oscar
+ * @author nasa
  */
-public class Hechicero extends Personaje{
-	public Hechicero(String nombre, String estatura) {
-		super(nombre, estatura);
-	}
+public class EscamasDragon implements Armadura {
 
+    @Override
+    public String generarArmadura() {
+        return "escamas de dragon";
+    }
+    
 }
