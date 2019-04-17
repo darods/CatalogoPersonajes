@@ -1,12 +1,8 @@
 package catalogopersonajes;
 
-import Equipamento.Arma;
-import Equipamento.Armadura;
-import Equipamento.Montura;
-import Personajes.ElfoOscuro;
-import Personajes.Guerrero;
-import Personajes.Hechicero;
-import Personajes.Personaje;
+import Equipamento.*;
+import Personajes.*;
+
 
 public class CatalogoPersonaje {
 	
@@ -27,7 +23,6 @@ public class CatalogoPersonaje {
 		
 		switch (opcion) {
 			case 0 :
-				
 				personaje = new Guerrero("Scar domador de dragones","1.95");
 				arma= personaje.crearArma();
 				armadura= personaje.crearArmadura();
@@ -39,8 +34,8 @@ public class CatalogoPersonaje {
 				arma= personaje.crearArma();
 				armadura= personaje.crearArmadura();
 				montura = personaje.crearMontura();
-				
 				break;
+
 			case 2 : 
 				personaje = new Hechicero("Merlin principe de las tinieblas","1.50");
 				arma= personaje.crearArma();
