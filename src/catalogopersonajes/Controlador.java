@@ -5,9 +5,6 @@
  */
 package catalogopersonajes;
 
-import Factorias.AbstractFactory;
-import Factorias.Client;
-import Factorias.FactoriaCaballero;
 import Interfaz.Interfaz;
 
 /**
@@ -20,12 +17,6 @@ public class Controlador {
     public static void main(String[] args) {
     	
     	Interfaz ventana = new Interfaz();
-        AbstractFactory factory1 = new FactoriaCaballero();
-        Client c1 = new Client(factory1);
-
-        c1.run();
-
-
     }
     
    

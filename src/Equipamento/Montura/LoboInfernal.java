@@ -4,7 +4,7 @@ public class LoboInfernal  implements Montura{
 	
 	@Override
 	public String generarMontura(){
-        return "";
+        return "lobito";
     }
 
 }

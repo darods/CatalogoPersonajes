@@ -12,6 +12,6 @@ package Equipamento.Arma;
  */
 public class Barita implements Arma{
     public String generarArma(){
-        return "la  mega barita";
+        return "campana de Lothric";
     }
 }

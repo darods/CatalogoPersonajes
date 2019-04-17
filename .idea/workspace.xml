@@ -2,31 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a23e29-40ce-40a0-9593-8d66aa9da63f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaDistancia.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaMagica.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaMelee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factorias/FactoriaMagica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factorias/FactoriaMelee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Arco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Arma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Armadura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/Armadura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Barita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Caballo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/EscamasDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Espada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Espada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/LoboInfernal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/MallaDeCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/MantoMagico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Montura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/Montura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/NubeMagica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipamento/Vestuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/EscamasDragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/EscamasDragon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/MallaDeCota.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/MallaDeCota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/MantoMagico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Armadura/MantoMagico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/Caballo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/Caballo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/LoboInfernal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/LoboInfernal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/NubeMagica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Montura/NubeMagica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/AbstractFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/AbstractFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaCaballero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaElfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/FactoriaHechicero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/Interfaz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/Interfaz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/ElfoOscuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/ElfoOscuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Guerrero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Guerrero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Hechicero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Hechicero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Personaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Personaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/catalogopersonajes/CatalogoPersonaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/catalogopersonajes/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/catalogopersonajes/Controlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arma/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Arco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arma/Espada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Espada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorias/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaCaballero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaElfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaHechicero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaz/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaz/Interfaz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Personajes/ElfoOscuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personajes/ElfoOscuro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Personajes/Guerrero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personajes/Guerrero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Personajes/Hechicero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personajes/Hechicero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Personajes/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personajes/Personaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalogopersonajes/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/FactoriaCaballero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaCaballero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/FactoriaElfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaElfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalogopersonajes/FactoriaHechicero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaHechicero.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,82 +62,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Arco.java">
+        <entry file="file://$PROJECT_DIR$/src/Factorias/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="225">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java">
+        <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaMagica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java">
+        <entry file="file://$PROJECT_DIR$/src/Factorias/AbstractFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Montura.java">
+        <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Controlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state>
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java">
+        <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/Armadura.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Barita.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Arma.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Espada.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="210" column="33" lean-forward="true" selection-start-line="210" selection-start-column="33" selection-end-line="210" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,16 +138,34 @@
         <option value="$PROJECT_DIR$/src/Equipamento/Arco.java" />
         <option value="$PROJECT_DIR$/src/Equipamento/Barita.java" />
         <option value="$PROJECT_DIR$/src/Interfaz/PanelFondo.java" />
-        <option value="$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java" />
-        <option value="$PROJECT_DIR$/src/Interfaz/Interfaz.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/FactoriaCaballero.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/FactoriaElfo.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/FactoriaMago.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/FactoriaHechicero.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/AbstractFactory.java" />
-        <option value="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/Client.java" />
         <option value="$PROJECT_DIR$/src/Equipamento/Armadura/Armadura.java" />
+        <option value="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/Factorias/FactoriaMelee.java" />
+        <option value="$PROJECT_DIR$/src/Factorias/FactoriaMagica.java" />
+        <option value="$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java" />
+        <option value="$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java" />
+        <option value="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" />
+        <option value="$PROJECT_DIR$/src/Personajes/Personaje.java" />
+        <option value="$PROJECT_DIR$/src/Personajes/Hechicero.java" />
+        <option value="$PROJECT_DIR$/src/Personajes/Guerrero.java" />
+        <option value="$PROJECT_DIR$/src/Personajes/ElfoOscuro.java" />
+        <option value="$PROJECT_DIR$/src/Factorias/Client.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Arma/Arco.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" />
+        <option value="$PROJECT_DIR$/src/Equipamento/Arma/Espada.java" />
+        <option value="$PROJECT_DIR$/src/Interfaz/Interfaz.java" />
       </list>
     </option>
   </component>
@@ -165,12 +182,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
               <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
@@ -189,12 +212,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Equipamento" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Arma" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Montura" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Factorias" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,7 +300,7 @@
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2560606" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26363635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,145 +347,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Interfaz.java" />
-    <entry file="file://$PROJECT_DIR$/src/Personajes/ElfoOsucro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Personajes/ElfoOscuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Personajes/Guerrero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Controlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="39" column="83" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorias/AbstractFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaCaballero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaElfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaHechicero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3045">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/Armadura.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Barita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Personajes/ElfoOsucro.java" />
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Vestuario.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/CatalogoPersonajes/Personajes/Guerrero.class">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Arma.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -452,52 +359,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Espada.java">
+    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaMelee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Arco.java">
+    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="420">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java">
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/EscamasDragon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java">
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/MantoMagico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Montura.java">
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/MallaDeCota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="165">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipamento/Vestuario.java">
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Armadura/Armadura.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/CatalogoPersonaje.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Personajes/Personaje.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Personajes/Hechicero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Personajes/Guerrero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Personajes/ElfoOscuro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.desktop/java/awt/event/ActionListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorias/FactoriaMagica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorias/AbstractFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/catalogopersonajes/Controlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/LoboInfernal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Montura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/NubeMagica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="60">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Montura/Caballo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorias/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Arco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Barita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipamento/Arma/Espada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="210" column="33" lean-forward="true" selection-start-line="210" selection-start-column="33" selection-end-line="210" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

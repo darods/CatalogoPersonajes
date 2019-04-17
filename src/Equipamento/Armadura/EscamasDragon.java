@@ -13,7 +13,7 @@ public class EscamasDragon implements Armadura {
 
     @Override
     public String generarArmadura() {
-        return ""; 
+        return "escamas de dragon";
     }
     
 }

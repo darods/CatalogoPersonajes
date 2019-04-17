@@ -5,12 +5,7 @@
  */
 package Personajes;
 
-import Equipamento.Arma.Arco;
-import Equipamento.Arma.Arma;
-import Equipamento.Armadura.Armadura;
-import Equipamento.Armadura.EscamasDragon;
-import Equipamento.Montura.LoboInfernal;
-import Equipamento.Montura.Montura;
+
 
 /**
  *
@@ -22,19 +17,4 @@ public class ElfoOscuro extends Personaje{
         super(nombre, estatura);
     }
 
-    @Override
-    public Arma crearArma() {
-        return new Arco();
-    }
-
-    @Override
-    public Armadura crearArmadura() {
-        return new EscamasDragon();
-    }
-    
-    @Override
-    public Montura crearMontura() {
-        return new LoboInfernal();
-    }
-    
 }

@@ -13,7 +13,7 @@ public class MallaDeCota implements Armadura{
 	
 	@Override
     public String generarArmadura(){
-		return "";
+		return "Malla de cota";
 		
 	}
 	

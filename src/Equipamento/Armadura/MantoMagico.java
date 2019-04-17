@@ -10,6 +10,6 @@ package Equipamento.Armadura;
 public class MantoMagico implements Armadura{
 	@Override
 	public String generarArmadura(){
-        return "";
+        return "manto magico";
     }
 }

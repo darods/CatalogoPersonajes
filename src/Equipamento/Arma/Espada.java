@@ -13,6 +13,6 @@ public class Espada implements Arma {
 	
 	@Override
 	public String generarArma(){
-        return "";
+        return "Espada de Ariandel";
     }
 }

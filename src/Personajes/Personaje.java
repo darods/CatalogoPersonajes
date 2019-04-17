@@ -16,9 +16,7 @@ import Equipamento.Montura.Montura;
 public abstract  class Personaje {
     private String nombre;
     private String estatura;
-    public abstract Arma crearArma();
-    public abstract Armadura crearArmadura();
-    public abstract Montura crearMontura();
+    private String rutaImagen;
     
     public Personaje(String nombre , String estatura) {
     	this.nombre = nombre;
@@ -34,7 +32,4 @@ public abstract  class Personaje {
 		return estatura;
 	}
 
-
-    
-    
 }

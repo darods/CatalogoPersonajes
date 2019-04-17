@@ -13,7 +13,7 @@ public class Arco implements Arma{
 
     @Override
     public String generarArma() {
-    	return "El arco del bosque" ;
+    	return "El arco tangente" ;
 }
     
 }
