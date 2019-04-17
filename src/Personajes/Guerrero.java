@@ -5,12 +5,12 @@
  */
 package Personajes;
 
-import Equipamento.Arma;
-import Equipamento.Armadura;
-import Equipamento.Caballo;
-import Equipamento.Espada;
-import Equipamento.MallaDeCota;
-import Equipamento.Montura;
+import Equipamento.Arma.Arma;
+import Equipamento.Armadura.Armadura;
+import Equipamento.Montura.Caballo;
+import Equipamento.Arma.Espada;
+import Equipamento.Armadura.MallaDeCota;
+import Equipamento.Montura.Montura;
 
 /**
  *

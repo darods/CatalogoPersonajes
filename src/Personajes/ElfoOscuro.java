@@ -5,12 +5,12 @@
  */
 package Personajes;
 
-import Equipamento.Arco;
-import Equipamento.Arma;
-import Equipamento.Armadura;
-import Equipamento.EscamasDragon;
-import Equipamento.LoboInfernal;
-import Equipamento.Montura;
+import Equipamento.Arma.Arco;
+import Equipamento.Arma.Arma;
+import Equipamento.Armadura.Armadura;
+import Equipamento.Armadura.EscamasDragon;
+import Equipamento.Montura.LoboInfernal;
+import Equipamento.Montura.Montura;
 
 /**
  *

@@ -5,7 +5,9 @@
  */
 package Personajes;
 
-import Equipamento.*;
+import Equipamento.Arma.Arma;
+import Equipamento.Armadura.Armadura;
+import Equipamento.Montura.Montura;
 
 /**
  *

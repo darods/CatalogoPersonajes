@@ -6,7 +6,12 @@
 
 package Personajes;
 
-import Equipamento.*;
+import Equipamento.Arma.Arma;
+import Equipamento.Arma.Barita;
+import Equipamento.Armadura.Armadura;
+import Equipamento.Armadura.MantoMagico;
+import Equipamento.Montura.Montura;
+import Equipamento.Montura.NubeMagica;
 
 /**
  *

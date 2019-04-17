@@ -5,6 +5,9 @@
  */
 package catalogopersonajes;
 
+import Factorias.AbstractFactory;
+import Factorias.Client;
+import Factorias.FactoriaCaballero;
 import Interfaz.Interfaz;
 
 /**
