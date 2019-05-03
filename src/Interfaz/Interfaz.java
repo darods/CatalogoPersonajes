@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import Factorias.*;
+import java.awt.GridLayout;
 
 
 
@@ -40,11 +41,20 @@ public class Interfaz extends JFrame implements ActionListener{
 
 	private JPanel panelDatos;
 
-	private JLabel personaje;
-	private ImageIcon img_hechicero = new ImageIcon("./img/PerHechicero.png");
-	private ImageIcon img_guerrero = new ImageIcon("./img/PerGuerrero.png");
-	private ImageIcon img_elfo = new ImageIcon("./img/PerElfo.png");
-
+	
+        private JLabel arma;
+        private JLabel armadura;
+        private JLabel montura;
+	private ImageIcon img_hechicero [] = {  new ImageIcon("./img/Hechicero/varita.png"),
+                                                new ImageIcon("./img/Hechicero/manto.png"),
+                                                new ImageIcon("./img/Hechicero/nube.png")};
+	private ImageIcon img_guerrero []= {  new ImageIcon("./img/Guerrero/espada.png"),
+                                                new ImageIcon("./img/Guerrero/malla.png"),
+                                                new ImageIcon("./img/Guerrero/caballo.png")};
+	private ImageIcon img_elfo []= {  new ImageIcon("./img/Elfo/arco.png"),
+                                                new ImageIcon("./img/Elfo/escamas.png"),
+                                                new ImageIcon("./img/Elfo/lobo.png")};
+         
 	private String[] datos;
 
 
@@ -81,26 +91,27 @@ public class Interfaz extends JFrame implements ActionListener{
 		panelPersonajeH.setSize(800,345);
 		panelPersonajeH.setLocation(50,310);
 		panelPersonajeH.setOpaque(false);
-		panelPersonajeH.setLayout(new BorderLayout());
-
+                panelPersonajeH.setLayout(new GridLayout(1, 4));
+                
+                
 		panelPersonajeG=new JPanel();
 		panelPersonajeG.setSize(800,345);
 		panelPersonajeG.setLocation(50,310);
 		panelPersonajeG.setOpaque(false);
-		panelPersonajeG.setLayout(new BorderLayout());
+		panelPersonajeG.setLayout(new GridLayout(1, 4));
 
 
 		panelPersonajeE=new JPanel();
 		panelPersonajeE.setSize(800,345);
 		panelPersonajeE.setLocation(50,310);
 		panelPersonajeE.setOpaque(false);
-		panelPersonajeE.setLayout(new BorderLayout());
+		panelPersonajeE.setLayout(new GridLayout(1, 4));
 
 
 		panelDatos = new JPanel();
 		panelDatos.setLayout(new BoxLayout(panelDatos,BoxLayout.Y_AXIS));
 		panelDatos.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
-		panelDatos.setOpaque(false);
+                panelDatos.setOpaque(false);
 		panelDatos.add(lbl_nombre);
 		panelDatos.add(lbl_estatura);
 		panelDatos.add(lbl_armadura);
@@ -117,7 +128,7 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_guerrero.setLocation(10, 200);
     	btn_guerrero.setSize(265, 75);
     	btn_guerrero.setBackground(new Color (100,2,4));
-    	btn_guerrero.setIcon(new ImageIcon("./img/guerrero.png"));
+    	btn_guerrero.setIcon(new ImageIcon("./img/Guerrero/guerrero.png"));
    		btn_guerrero.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
   		btn_guerrero.setContentAreaFilled(true);
    		btn_guerrero.setPreferredSize(new Dimension(0,58));
@@ -131,7 +142,7 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_hechicero.setLocation(600, 200);
     	btn_hechicero.setSize(280, 75);
     	btn_hechicero.setBackground(new Color (100,2,4));
-    	btn_hechicero.setIcon(new ImageIcon("./img/hechicero.png"));
+    	btn_hechicero.setIcon(new ImageIcon("./img/Hechicero/hechicero.png"));
     	btn_hechicero.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
     	btn_hechicero.setContentAreaFilled(true);
     	btn_hechicero.setPreferredSize(new Dimension(0,58));
@@ -144,14 +155,21 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_elfo.setLocation(318,175);
     	btn_elfo.setSize(228, 130);
     	btn_elfo.setBackground(new Color (100,2,4));
-    	btn_elfo.setIcon(new ImageIcon("./img/elfo.png"));
+    	btn_elfo.setIcon(new ImageIcon("./img/Elfo/elfo.png"));
     	btn_elfo.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
     	btn_elfo.setContentAreaFilled(true);
     	btn_elfo.setPreferredSize(new Dimension(0,58));
     	btn_elfo.setHorizontalAlignment(SwingConstants.CENTER);
     	btn_elfo.addActionListener(this);
 
-    	personaje= new JLabel();
+    	
+        
+        arma=new JLabel();
+        arma.setHorizontalAlignment(SwingConstants.CENTER);
+        armadura=new JLabel();
+        armadura.setHorizontalAlignment(SwingConstants.CENTER);
+        montura=new JLabel();
+        montura.setHorizontalAlignment(SwingConstants.CENTER);
 
 
 
@@ -197,8 +215,10 @@ public class Interfaz extends JFrame implements ActionListener{
 	}
 
 
-	private void generarVistaPersonaje(AbstractFactory factory, ImageIcon Icono, JPanel panel){
+	private void generarVistaPersonaje(AbstractFactory factory, ImageIcon Icono[], JPanel panel){
 		apagar();
+
+                
 		Client cliente = new Client(factory);
 		datos = cliente.run();
 
@@ -208,12 +228,21 @@ public class Interfaz extends JFrame implements ActionListener{
 		lbl_arma.setText("Arma : " + datos[3]);
 		lbl_montura.setText("Montura : " + datos[4]);
 
-		personaje.setIcon(Icono);
-
+		
+                arma.setIcon(Icono [0]);
+                armadura.setIcon(Icono [1]);
+                montura.setIcon(Icono [2]);
+                
+                
+                
 		panel.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
-		panel.add(personaje,BorderLayout.CENTER);
-		panel.add(panelDatos,BorderLayout.EAST);
-
+		
+                panel.add(panelDatos);
+                panel.add(arma);
+                panel.add(armadura);
+                panel.add(montura);
+                
+               
 
 		panel.setVisible(true);
 
