@@ -1,6 +1,5 @@
 package Interfaz;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Dimension;
@@ -45,13 +44,18 @@ public class Interfaz extends JFrame implements ActionListener{
         private JLabel arma;
         private JLabel armadura;
         private JLabel montura;
-	private ImageIcon img_hechicero [] = {  new ImageIcon("./img/Hechicero/varita.png"),
+	private ImageIcon img_hechicero [] = {  	new ImageIcon("./img/Hechicero/PerHechicero.png"),
+												new ImageIcon("./img/Hechicero/varita.png"),
                                                 new ImageIcon("./img/Hechicero/manto.png"),
                                                 new ImageIcon("./img/Hechicero/nube.png")};
-	private ImageIcon img_guerrero []= {  new ImageIcon("./img/Guerrero/espada.png"),
+
+	private ImageIcon img_guerrero []= {  		new ImageIcon("./img/Guerrero/PerGuerrero.png"),
+												new ImageIcon("./img/Guerrero/espada.png"),
                                                 new ImageIcon("./img/Guerrero/malla.png"),
                                                 new ImageIcon("./img/Guerrero/caballo.png")};
-	private ImageIcon img_elfo []= {  new ImageIcon("./img/Elfo/arco.png"),
+
+	private ImageIcon img_elfo []= {  			new ImageIcon("./img/Elfo/PerElfo.png"),
+												new ImageIcon("./img/Elfo/arco.png"),
                                                 new ImageIcon("./img/Elfo/escamas.png"),
                                                 new ImageIcon("./img/Elfo/lobo.png")};
          
