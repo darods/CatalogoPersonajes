@@ -1,5 +1,6 @@
 package Factorias;
 
+import Animaciones.Ataque.AtaqueGeneral;
 import Equipamento.Arma.Arma;
 import Equipamento.Armadura.Armadura;
 import Equipamento.Montura.Montura;
@@ -11,12 +12,14 @@ public class Client {
     private Arma armaFabrica;
     private Armadura armaduraFabrica;
     private Montura monturaFabrica;
+    private AtaqueGeneral ataqueFabrica;
 
     public Client(AbstractFactory factory){
         personajeFabrica = factory.CreateProdructA();
         armaFabrica = factory.CreateProdructB();
         armaduraFabrica = factory.CreateProdructC();
         monturaFabrica = factory.CreateProdructD();
+        ataqueFabrica = factory.CreateProductE();
     }
 
     public String[] run(){
@@ -25,7 +28,8 @@ public class Client {
                 personajeFabrica.getEstatura(),
                 armaduraFabrica.generarArmadura(),
                 armaFabrica.generarArma(),
-                monturaFabrica.generarMontura()
+                monturaFabrica.generarMontura(),
+                ataqueFabrica.getAnimacionAtaque(),
         };
     }
 }

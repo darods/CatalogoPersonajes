@@ -1,5 +1,7 @@
 package Factorias;
 
+import Animaciones.Ataque.AtaqueGeneral;
+import Animaciones.Ataque.AtaqueGuerrero;
 import Equipamento.Arma.Arma;
 import Equipamento.Arma.Espada;
 import Equipamento.Armadura.Armadura;
@@ -29,6 +31,9 @@ public class FactoriaMelee extends AbstractFactory{
     public Montura CreateProdructD() {
         return new Caballo();
     }
+
+    @Override
+    public AtaqueGeneral CreateProductE() {return new AtaqueGuerrero("./img/Guerrero/animacionGuerrero.gif"); }
 
 
 }

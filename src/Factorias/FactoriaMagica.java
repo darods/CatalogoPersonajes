@@ -1,5 +1,7 @@
 package Factorias;
 
+import Animaciones.Ataque.AtaqueGeneral;
+import Animaciones.Ataque.AtaqueHechicero;
 import Equipamento.Arma.Arma;
 import Equipamento.Arma.Barita;
 import Equipamento.Armadura.Armadura;
@@ -30,4 +32,7 @@ public class FactoriaMagica extends AbstractFactory{
     public Montura CreateProdructD() {
         return new NubeMagica();
     }
+
+    @Override
+    public AtaqueGeneral CreateProductE() { return new AtaqueHechicero("./img/Hechicero/animacionHechicero.gif");}
 }

@@ -1,5 +1,7 @@
 package Factorias;
 
+import Animaciones.Ataque.AtaqueElfo;
+import Animaciones.Ataque.AtaqueGeneral;
 import Equipamento.Armadura.Armadura;
 import Equipamento.Armadura.EscamasDragon;
 import Equipamento.Montura.LoboInfernal;
@@ -30,4 +32,7 @@ public class FactoriaDistancia extends AbstractFactory{
     public Montura CreateProdructD() {
         return new LoboInfernal();
     }
+
+    @Override
+    public AtaqueGeneral CreateProductE() { return new AtaqueElfo("./img/Elfo/animacionElfo.gif"); }
 }
