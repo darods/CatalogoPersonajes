@@ -27,6 +27,7 @@ public class Interfaz extends JFrame implements ActionListener{
 	private JButton btn_guerrero;
 	private JButton btn_hechicero;
 	private JButton btn_elfo;
+	private JButton btn_ataque;
 	private ImageIcon img_titulo = new ImageIcon("./img/titulo.png");
 	private JLabel lbl_titulo;
 	private JLabel lbl_nombre;
@@ -58,6 +59,7 @@ public class Interfaz extends JFrame implements ActionListener{
 												new ImageIcon("./img/Elfo/arco.png"),
                                                 new ImageIcon("./img/Elfo/escamas.png"),
                                                 new ImageIcon("./img/Elfo/lobo.png")};
+
          
 	private String[] datos;
 
@@ -114,8 +116,8 @@ public class Interfaz extends JFrame implements ActionListener{
 
 		panelDatos = new JPanel();
 		panelDatos.setLayout(new BoxLayout(panelDatos,BoxLayout.Y_AXIS));
-		panelDatos.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
-                panelDatos.setOpaque(false);
+		//panelDatos.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
+		panelDatos.setOpaque(false);
 		panelDatos.add(lbl_nombre);
 		panelDatos.add(lbl_estatura);
 		panelDatos.add(lbl_armadura);
@@ -166,7 +168,16 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_elfo.setHorizontalAlignment(SwingConstants.CENTER);
     	btn_elfo.addActionListener(this);
 
-    	
+    	btn_ataque = new JButton();
+    	btn_ataque.setLocation(10,500);
+    	btn_ataque.setSize(200, 100);
+    	btn_ataque.setBackground(new Color (100,2,4));
+    	btn_ataque.setIcon(new ImageIcon("./img/btnAtacar.png"));
+        btn_ataque.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
+        btn_ataque.setContentAreaFilled(true);
+        btn_ataque.setPreferredSize(new Dimension(0,58));
+        btn_ataque.setHorizontalAlignment(SwingConstants.CENTER);
+        btn_ataque.addActionListener(this);
         
         arma=new JLabel();
         arma.setHorizontalAlignment(SwingConstants.CENTER);
@@ -203,6 +214,8 @@ public class Interfaz extends JFrame implements ActionListener{
     	this.getContentPane().add(panelPersonajeH);
     	this.getContentPane().add(panelPersonajeG);
     	this.getContentPane().add(panelPersonajeE);
+        this.getContentPane().add(btn_ataque);
+        btn_ataque.setVisible(false);
 
 
     	//--------------------------------------------------
@@ -216,6 +229,7 @@ public class Interfaz extends JFrame implements ActionListener{
 		panelPersonajeE.setVisible(false);
 		panelPersonajeG.setVisible(false);
 		panelPersonajeH.setVisible(false);
+        btn_ataque.setVisible(true);
 	}
 
 
@@ -231,12 +245,12 @@ public class Interfaz extends JFrame implements ActionListener{
 		lbl_armadura.setText("Armadura : "+ datos[2]);
 		lbl_arma.setText("Arma : " + datos[3]);
 		lbl_montura.setText("Montura : " + datos[4]);
-
 		
-                arma.setIcon(Icono [0]);
-                armadura.setIcon(Icono [1]);
-                montura.setIcon(Icono [2]);
-                
+		arma.setIcon(Icono [0]);
+		armadura.setIcon(Icono [1]);
+		montura.setIcon(Icono[3]);
+
+
                 
                 
 		panel.setBorder(BorderFactory.createLineBorder(Color.WHITE,0));
@@ -261,6 +275,8 @@ public class Interfaz extends JFrame implements ActionListener{
 			AbstractFactory factory = new FactoriaMagica();
 			generarVistaPersonaje(factory,img_hechicero,panelPersonajeH);
 
+
+
 		}
 
 
@@ -276,6 +292,11 @@ public class Interfaz extends JFrame implements ActionListener{
 			generarVistaPersonaje(factory, img_elfo, panelPersonajeE);
 
 		}
+        if (e.getSource() == btn_ataque){
+            arma.setIcon(new ImageIcon(datos[5]));
+        }
+
+
 	}
 
 
