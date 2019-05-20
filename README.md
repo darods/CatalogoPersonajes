@@ -9,7 +9,7 @@ los integrantes del proyecto son :
 * *Isaac Gamboa*
 * *Oscar Gutierrez*
 
-##Fuentes
+## Fuentes
 *Ilustraciones :*
 
 [Nahelus. Dark elf rogue.](https://www.deviantart.com/nahelus/art/Dark-elf-rogue-771585526) 
