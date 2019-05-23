@@ -16,6 +16,12 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import Factorias.*;
+import builder.ConstructorElfo;
+import builder.ConstructorGuerrero;
+import builder.ConstructorHechicero;
+import builder.ConstructorPersonaje;
+import builder.PersonajeCompleto;
+
 import java.awt.GridLayout;
 
 
@@ -26,6 +32,8 @@ public class Interfaz extends JFrame implements ActionListener{
 	private PanelFondo Fondo;
 	private JButton btn_guerrero;
 	private JButton btn_hechicero;
+	private JButton btn_nativo;
+
 	private JButton btn_elfo;
 	private JButton btn_ataque;
 	private ImageIcon img_titulo = new ImageIcon("./img/titulo.png");
@@ -38,9 +46,14 @@ public class Interfaz extends JFrame implements ActionListener{
 	private JPanel panelPersonajeH;
 	private JPanel panelPersonajeG;
 	private JPanel panelPersonajeE;
-
+	
 	private JPanel panelDatos;
-
+	
+	Client director ;
+	private ConstructorPersonaje constructorPersonaje;
+	private PersonajeCompleto personaje;
+	
+	
 	
         private JLabel arma;
         private JLabel armadura;
@@ -59,6 +72,11 @@ public class Interfaz extends JFrame implements ActionListener{
 												new ImageIcon("./img/Elfo/arco.png"),
                                                 new ImageIcon("./img/Elfo/escamas.png"),
                                                 new ImageIcon("./img/Elfo/lobo.png")};
+	
+	private ImageIcon img_nativo []= {  			new ImageIcon("./img/Nativo/OrcoBoton.png"),
+			new ImageIcon("./img/Nativo/ArmaOrco.png"),
+            new ImageIcon("./img/Nativo/ArmaduraOrco.png"),
+            new ImageIcon("./img/Nativo/MonturaOrco.png")};
 
          
 	private String[] datos;
@@ -154,6 +172,17 @@ public class Interfaz extends JFrame implements ActionListener{
     	btn_hechicero.setPreferredSize(new Dimension(0,58));
     	btn_hechicero.setHorizontalAlignment(SwingConstants.CENTER);
     	btn_hechicero.addActionListener(this);
+    	
+    	btn_nativo = new JButton();
+    	btn_nativo.setLocation(10, 550);
+    	btn_nativo.setSize(200, 70);
+    	btn_nativo.setBackground(new Color (100,2,4));
+    	btn_nativo.setIcon(new ImageIcon("./img/Nativo/nativo.png"));
+    	btn_nativo.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
+    	btn_nativo.setContentAreaFilled(true);
+    	btn_nativo.setPreferredSize(new Dimension(0,58));
+    	btn_nativo.setHorizontalAlignment(SwingConstants.CENTER);
+    	btn_nativo.addActionListener(this);
 
 
 
@@ -170,7 +199,7 @@ public class Interfaz extends JFrame implements ActionListener{
 
     	btn_ataque = new JButton();
     	btn_ataque.setLocation(10,500);
-    	btn_ataque.setSize(200, 100);
+    	btn_ataque.setSize(200, 70);
     	btn_ataque.setBackground(new Color (100,2,4));
     	btn_ataque.setIcon(new ImageIcon("./img/btnAtacar.png"));
         btn_ataque.setBorder(BorderFactory.createLineBorder(Color.WHITE,2));
@@ -215,6 +244,8 @@ public class Interfaz extends JFrame implements ActionListener{
     	this.getContentPane().add(panelPersonajeG);
     	this.getContentPane().add(panelPersonajeE);
         this.getContentPane().add(btn_ataque);
+        this.getContentPane().add(btn_nativo);
+
         btn_ataque.setVisible(false);
 
 
@@ -233,18 +264,16 @@ public class Interfaz extends JFrame implements ActionListener{
 	}
 
 
-	private void generarVistaPersonaje(AbstractFactory factory, ImageIcon Icono[], JPanel panel){
+	private void generarVistaPersonaje( ImageIcon Icono[], JPanel panel){
 		apagar();
-
+		
                 
-		Client cliente = new Client(factory);
-		datos = cliente.run();
 
-		lbl_nombre.setText(datos[0]);
-		lbl_estatura.setText("Estatura : "+ datos[1] + " metros");
-		lbl_armadura.setText("Armadura : "+ datos[2]);
-		lbl_arma.setText("Arma : " + datos[3]);
-		lbl_montura.setText("Montura : " + datos[4]);
+		lbl_nombre.setText(personaje.getNombre());
+		lbl_estatura.setText("Estatura : "+ personaje.getEstatura() + " metros");
+		lbl_armadura.setText("Armadura:"+personaje.getArmadura());
+		lbl_arma.setText("Arma : " + personaje.getArma());
+		lbl_montura.setText("Montura : " + personaje.getMontura());
 		
 		arma.setIcon(Icono [0]);
 		armadura.setIcon(Icono [1]);
@@ -272,8 +301,14 @@ public class Interfaz extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource() == btn_hechicero) {
-			AbstractFactory factory = new FactoriaMagica();
-			generarVistaPersonaje(factory,img_hechicero,panelPersonajeH);
+			director = new Client();
+
+			constructorPersonaje = new  ConstructorHechicero();
+			director.setConstructorPersonaje(constructorPersonaje);
+			director.construirPersonaje();
+			
+			personaje = director.getPersonaje();
+			generarVistaPersonaje(img_hechicero,panelPersonajeH);
 
 
 
@@ -281,19 +316,38 @@ public class Interfaz extends JFrame implements ActionListener{
 
 
 		if (e.getSource() == btn_guerrero) {
-			AbstractFactory factory = new FactoriaMelee();
-			generarVistaPersonaje(factory, img_guerrero, panelPersonajeG);
+			director = new Client();
+
+			constructorPersonaje = new  ConstructorGuerrero();
+			director.setConstructorPersonaje(constructorPersonaje);
+			director.construirPersonaje();
+			personaje = director.getPersonaje();
+			generarVistaPersonaje( img_guerrero, panelPersonajeG);
 
 		}
 
 		if (e.getSource() == btn_elfo){
+			director = new Client();
 
-			AbstractFactory factory = new FactoriaDistancia();
-			generarVistaPersonaje(factory, img_elfo, panelPersonajeE);
+			constructorPersonaje = new  ConstructorElfo();
+			director.setConstructorPersonaje(constructorPersonaje);
+			director.construirPersonaje();
+			personaje = director.getPersonaje();
+			generarVistaPersonaje( img_elfo, panelPersonajeE);
+
+		}
+		if (e.getSource() == btn_nativo){
+			director = new Client();
+
+			constructorPersonaje = new  ConstructorElfo();
+			director.setConstructorPersonaje(constructorPersonaje);
+			director.construirPersonaje();
+			personaje = director.getPersonaje();
+			generarVistaPersonaje( img_nativo, panelPersonajeE);
 
 		}
         if (e.getSource() == btn_ataque){
-            arma.setIcon(new ImageIcon(datos[5]));
+            arma.setIcon(new ImageIcon(personaje.getAtaque()));
         }
 
 

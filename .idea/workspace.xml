@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="23a23e29-40ce-40a0-9593-8d66aa9da63f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CatalogoPersonajes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CatalogoPersonajes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/btnAtacar.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/btnAtacar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Arma/Barita.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Equipamento/Arma/Barita.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/AbstractFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/AbstractFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Factorias/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/Interfaz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CatalogoPersonajes/Interfaz/Interfaz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Factorias/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaMagica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaMagica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factorias/FactoriaMelee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorias/FactoriaMelee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaz/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaz/Interfaz.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,26 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <first_editor relative-caret-position="150">
+                <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1272">
+              <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -86,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/Equipamento/Arma/Barita.java" />
         <option value="$PROJECT_DIR$/src/Equipamento/Arma/Espada.java" />
         <option value="$PROJECT_DIR$/src/catalogopersonajes/Controlador.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Factorias/AbstractFactory.java" />
         <option value="$PROJECT_DIR$/src/Animaciones/Ataque/AtaqueGeneral.java" />
         <option value="$PROJECT_DIR$/src/Animaciones/Ataque/AtaqueElfo.java" />
@@ -97,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/Factorias/FactoriaDistancia.java" />
         <option value="$PROJECT_DIR$/src/Factorias/Client.java" />
         <option value="$PROJECT_DIR$/src/Interfaz/Interfaz.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -114,7 +116,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,43 +123,19 @@
               <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
               <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Ataque" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Factorias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatalogoPersonajes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatalogoPersonajes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Personajes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Descargas/CatalogoPersonajes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CatalogoDePersonajes.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,7 +195,7 @@
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27672035" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20937042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -227,7 +204,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32781956" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32781956" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,7 +212,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32866043" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32781956" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,21 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Personajes/Personaje.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -523,15 +485,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
+    <entry file="file://$PROJECT_DIR$/src/builder/ConstructorNativoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaz/Interfaz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>CatalogoDePersonajes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

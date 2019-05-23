@@ -5,31 +5,29 @@ import Equipamento.Arma.Arma;
 import Equipamento.Armadura.Armadura;
 import Equipamento.Montura.Montura;
 import Personajes.Personaje;
+import builder.ConstructorPersonaje;
+import builder.PersonajeCompleto;
 
 
 public class Client {
-    private Personaje personajeFabrica;
-    private Arma armaFabrica;
-    private Armadura armaduraFabrica;
-    private Montura monturaFabrica;
-    private AtaqueGeneral ataqueFabrica;
-
-    public Client(AbstractFactory factory){
-        personajeFabrica = factory.CreateProdructA();
-        armaFabrica = factory.CreateProdructB();
-        armaduraFabrica = factory.CreateProdructC();
-        monturaFabrica = factory.CreateProdructD();
-        ataqueFabrica = factory.CreateProductE();
+    private ConstructorPersonaje constructorPersonaje;
+   
+    public void setConstructorPersonaje(ConstructorPersonaje cp){
+    	this.constructorPersonaje = cp;
+    }
+    
+    public PersonajeCompleto getPersonaje () {
+    	return constructorPersonaje.getPerosnaje();
     }
 
-    public String[] run(){
+    public void construirPersonaje(){
+    	constructorPersonaje.crearPersonaje();
+    	constructorPersonaje.construirArma();
+    	constructorPersonaje.construirArmadura();
+    	constructorPersonaje.construirAtaque();
+    	constructorPersonaje.construirMontura();
+    	constructorPersonaje.construirDatos();
 
-        return new String[]{personajeFabrica.getNombre(),
-                personajeFabrica.getEstatura(),
-                armaduraFabrica.generarArmadura(),
-                armaFabrica.generarArma(),
-                monturaFabrica.generarMontura(),
-                ataqueFabrica.getAnimacionAtaque(),
-        };
+       
     }
 }
