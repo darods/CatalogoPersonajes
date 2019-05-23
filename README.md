@@ -9,11 +9,13 @@ los integrantes del proyecto son :
 * *Isaac Gamboa*
 * *Oscar Gutierrez*
 
+
 ![Diseño del proyecto](/DiseñoCatalogoPersonajes.png)
 ### Patrones de diseño
 * El patrón abstract factory se puede ver en la estructura asi como en paquete 
 "Factorias"
 
+###### IMPORTANTE AGREGAR LA LIBRERIA "CatalogoDePersonajes.jar"
 * El patrón Builder se puede ver en el paquete "builder"
 
 * El patrón Adapter se pueder ver dentro del paquete "builder", en la clase 
